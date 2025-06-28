@@ -1924,7 +1924,6 @@
             });
         });
 
-        // Form validation and submission
         const contactForm = document.getElementById('contactForm');
         const submitBtn = document.getElementById('submitBtn');
         
@@ -1948,16 +1947,13 @@
             const email = document.getElementById('email').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
-            
-            // Send email (this would be replaced with actual email sending functionality)
+    
             const mailtoLink = `mailto:rizkysuperr877@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage: ${message}`)}`;
             window.location.href = mailtoLink;
-            
-            // Reset form
+    
             contactForm.reset();
             submitBtn.disabled = true;
             
-            // Show success message
             alert('Silahkan Kirim Pesan Via Email Agar Pesan Tersampaikan Ke Developer!');
         });
     </script>
